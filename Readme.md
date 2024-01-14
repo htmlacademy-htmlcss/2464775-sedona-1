@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Салак](https://up.htmlacademy.ru/htmlcss-individual/1/user/2464775).
-* Наставник: [Михаил Данюшин] (https://htmlacademy.ru/profile/id225742).
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
 
 ---
 
