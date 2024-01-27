@@ -31,3 +31,9 @@ body {
     text-decoration: none;
     text-align: center;
 }
+
+.main-index {
+    background-image: url(../images/background-image.jpg);
+    background-size: 1200px 485px;
+    background-repeat: no-repeat;
+}
