@@ -22,10 +22,22 @@ body {
     background-color: #ffffff;
 }
 
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color:#ffffff;
+    background-color: #756157;
+    text-align: center;
+    text-decoration: none;
+}
+
 .navigation-link {
     font-size: 20px;
     line-height: 24px;
-    color: #000;
+    color: #000000;
     font-weight: 700;
     text-transform: capitalize;
     text-decoration: none;
@@ -37,6 +49,19 @@ body {
     background-size: 1200px 485px;
     background-repeat: no-repeat;
 }
+.thesis, .search-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.thesis-description, .search-description {
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+}
 
 .advantages-title, .infrastructure-title {
     font-size: 24px;
@@ -46,7 +71,7 @@ body {
 }
 
 .advantages-white {
-    color: #fff;
+    color: #ffffff;
 }
 
 .advantages-description, .infrastructure-description {
@@ -55,10 +80,44 @@ body {
 }
 
 .advantages-description-white {
-    color: #fff;
+    color: #ffffff;
 }
 
 .advantages-img {
     background-size: 800px 385px;
     background-repeat: no-repeat;
+}
+
+.search-button {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.subscription-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-description {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subcribe-button {
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #0000ff;
+}
+
+.footer-phone {
+    font-style: normal;
+    color:#000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
 }
