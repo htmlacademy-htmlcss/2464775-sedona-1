@@ -37,3 +37,10 @@ body {
     background-size: 1200px 485px;
     background-repeat: no-repeat;
 }
+
+p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
