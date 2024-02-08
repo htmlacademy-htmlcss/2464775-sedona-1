@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/pt-sans-italic.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color:#ffffff;
+    background-color: #756157;
+    text-align: center;
+    text-decoration: none;
+}
+
+.page-header {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 339px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-right-container {
+    max-width: 338px;
+    margin-left: auto;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.main-index {
+    background-image: url("../images/background-image.jpg");
+    background-size: 1200px 485px;
+    background-repeat: no-repeat;
+}
+
+.page-container {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.thesis, .search-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.thesis-description, .search-description {
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item {
+    width: 230px;
+}
+
+.advantages-title, .infrastructure-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-white {
+    color: #ffffff;
+}
+
+.advantages-description, .infrastructure-description {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages-description-white {
+    color: #ffffff;
+}
+
+.search-button {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.subscription {
+    background-image: url("../images/subscription-image.jpg");
+    background-size: 1200px 414,86px;
+    background-repeat: no-repeat;
+}
+
+.subscription-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-description {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subcribe-button {
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #0000ff;
+}
+
+.footer-phone {
+    font-style: normal;
+    color:#000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.main-inner{
+    color: #ffffff;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.control-input {
+    line-height: 23px;
+}
+
+.apply-button, .featured-products-button{
+    background-color: #0000ff;
+}
+
+.featured-chose-button {
+    background-color: #008000;
+}
+
+.product-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.product-price {
+    text-align: right;
+}
+
+.rating {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.pagination-item {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.page-footer-container {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.footer-social-list {
+    width: 142px;
+    margin-right: 41.5px;
+}
