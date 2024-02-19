@@ -39,7 +39,7 @@ body {
     background-color: #ffffff;
 }
 
-.container-main-page, .container-catalog {
+.container-main-page, .container-catalog, .page-footer {
     width: 1200px;
     margin: 0 auto;
 }
@@ -54,6 +54,7 @@ body {
     background-color: #756157;
     text-align: center;
     text-decoration: none;
+    height: 36px;
 }
 
 .page-header-logo {
@@ -83,6 +84,7 @@ body {
 
 .navigation {
     display: flex;
+    height: 64px;
 }
 
 .navigation-list {
@@ -172,6 +174,10 @@ body {
     text-transform: uppercase;
 }
 
+.infrastructure {
+    padding-right: 70px;
+}
+
 .advantages-white {
     color: #ffffff;
 }
@@ -250,10 +256,21 @@ body {
     color: #ffffff;
 }
 
+.inner-header {
+    padding-bottom: 40px;
+}
+
 .inner-header-title {
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .breadcrumbs-link {
@@ -265,6 +282,22 @@ body {
     font-weight: 700;
     line-height: 24px;
     text-transform: capitalize;
+    padding-bottom: 32px;
+}
+
+.catalog-filter {
+    display: flex;
+}
+
+.price-block {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    padding-left: 140.15px;
+    padding-right: 70px;
+    width: 288px;
 }
 
 .control-input {
@@ -295,12 +328,20 @@ body {
     text-transform: uppercase;
 }
 
+.pagination {
+    display: flex;
+    margin: 0;
+    padding: 40px 70px 60px;
+}
+
 .pagination-item {
     color: #ffffff;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    height: 60px;
+    width: 60px;
 }
 
 .footer-social-list {
@@ -312,4 +353,68 @@ body {
     display: flex;
     height: 120px;
     margin: 40px 70px 30px;
+}
+
+.filter-container {
+    background-image: url("../images/filter-background.jpg");
+    background-size: 1200px 412px;
+    background-repeat: no-repeat;
+    padding: 35px 70px 70px;
+}
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.catalog-filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-filter-item {
+    padding-bottom: 16px;
+}
+
+.catalog-filter-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 150.43px;
+    height: 157px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 191px;
+}
+
+.select-container {
+    display: flex;
+    color: #000000;
+    margin: 0;
+    padding: 50px 70px 40px;
+    height: 49px;
+}
+
+.select-result {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    padding-right: 200px;
+}
+
+.select-control {
+    width: 292px;
+}
+
+.cards-button-container {
+    display: flex;
+    padding-left: 70px;
 }
