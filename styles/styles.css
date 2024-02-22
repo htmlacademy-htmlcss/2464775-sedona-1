@@ -55,6 +55,7 @@ body {
     text-align: center;
     text-decoration: none;
     height: 36px;
+    border: none;
 }
 
 .page-header-logo {
@@ -101,7 +102,7 @@ body {
 .navigation-user {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -137,6 +138,11 @@ body {
     text-transform: uppercase;
 }
 
+.search-title {
+    margin: 0;
+    padding: 0;
+}
+
 .thesis {
     margin-top: 69px;
 }
@@ -156,6 +162,11 @@ body {
     line-height: 26px;
 }
 
+.search-description {
+    margin-top: 20px;
+    margin-bottom: 54px;
+}
+
 .search {
     display: flex;
     flex-direction: column;
@@ -165,6 +176,25 @@ body {
 
 .subscription-button-container {
     display: flex;
+    width: 684px;
+    height: 52px;
+}
+
+.subscription-form-name {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.subscribtion-user-email {
+    width: 452px;
+    padding-left: 20px;
+}
+
+.subscribe-button {
+    width: 232px;
+    height: 52px;
+    background-color: #82b3d3;
 }
 
 .advantages-title, .infrastructure-title {
@@ -209,8 +239,13 @@ body {
 }
 
 .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 20px;
     line-height: 36px;
+    width: 376px;
+    height: 52px;
 }
 
 .subscription {
@@ -220,6 +255,7 @@ body {
     background-image: url("../images/subscription-image.jpg");
     background-size: 1200px 414,86px;
     background-repeat: no-repeat;
+    padding: 96px 258px 104px;
 }
 
 .subscription-title {
@@ -228,6 +264,8 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .subscription-description {
@@ -235,6 +273,8 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 26px;
+    margin: 0;
+    padding: 20px 0 54px;
 }
 
 .subcribe-button {
@@ -244,12 +284,15 @@ body {
 }
 
 .footer-phone {
+    display: flex;
     font-style: normal;
     color:#000000;
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
-    margin: 5px 194px 195px;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
 }
 
 .main-inner{
@@ -275,6 +318,13 @@ body {
 
 .breadcrumbs-link {
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-arrow {
+    padding-left: 10.8px;
+    padding-right: 10.8px;
 }
 
 .catalog-filter-title {
@@ -305,7 +355,12 @@ body {
 }
 
 .apply-button, .featured-products-button{
-    background-color: #0000ff;
+    background-color: #82b3d3;
+}
+
+.reset-button {
+    background: none;
+    padding-top: 32px;
 }
 
 .featured-chose-button {
@@ -345,14 +400,27 @@ body {
 }
 
 .footer-social-list {
+    display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
     margin-right: 41.5px;
+}
+
+.footer-social-item {
+    display: flex;
+    width: 47.33px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-container {
     display: flex;
-    height: 120px;
+    height: 50px;
     margin: 40px 70px 30px;
+    justify-content: space-between;
 }
 
 .filter-container {
@@ -367,6 +435,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 .catalog-filter-list {
@@ -391,10 +460,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 191px;
+    padding-top: 56px;
 }
 
 .select-container {
     display: flex;
+    justify-content: space-between;
     color: #000000;
     margin: 0;
     padding: 50px 70px 40px;
@@ -402,12 +473,13 @@ body {
 }
 
 .select-result {
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     margin: 0;
     padding: 0;
-    padding-right: 200px;
 }
 
 .select-control {
@@ -417,4 +489,13 @@ body {
 .cards-button-container {
     display: flex;
     padding-left: 70px;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.card-button {
+    background: none;
 }
