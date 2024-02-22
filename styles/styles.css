@@ -454,6 +454,7 @@ body {
     padding: 0;
     width: 150.43px;
     height: 157px;
+    border: none;
 }
 
 .filter-buttons {
@@ -465,7 +466,6 @@ body {
 
 .select-container {
     display: flex;
-    justify-content: space-between;
     color: #000000;
     margin: 0;
     padding: 50px 70px 40px;
@@ -480,6 +480,7 @@ body {
     line-height: 36px;
     margin: 0;
     padding: 0;
+    width: 538px;
 }
 
 .select-control {
