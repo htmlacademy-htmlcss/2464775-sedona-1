@@ -277,6 +277,14 @@ body {
     padding: 20px 0 54px;
 }
 
+.subscription-catalog {
+    background: none;
+}
+
+.subscription-title-catalog, .subscription-description-catalog {
+    color: #000000;
+}
+
 .subcribe-button {
     font-size: 20px;
     line-height: 36px;
