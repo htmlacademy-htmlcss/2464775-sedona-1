@@ -428,7 +428,13 @@ a {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 37px;
+    background-color: #f2f2f2;
+    justify-self: end;
 }
 
 .pagination {
@@ -505,6 +511,10 @@ a {
     border: none;
 }
 
+.catalog-filter-group-infrastructure {
+    padding-right: 70px;
+}
+
 .filter-buttons {
     display: flex;
     flex-direction: column;
@@ -576,6 +586,9 @@ a {
 }
 
 .product-card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
 }
 
