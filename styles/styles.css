@@ -135,6 +135,28 @@ body {
     background-repeat: no-repeat;
 }
 
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item-container {
+    width: 230px;
+    padding: 102px 85px;
+    min-height: 181px;
+}
+
+.advantages-item-wide {
+    display: flex;
+    background-color: #82b3d3;
+}
+
+.advantages-item-wide-reverse {
+    flex-direction: row-reverse;
+}
+
 .thesis, .search-title {
     text-align: center;
     font-size: 30px;
@@ -159,6 +181,7 @@ body {
     margin-bottom: 64px;
     padding: 0;
     margin: 0;
+    padding-bottom: 69px;
 }
 
 .thesis-description, .search-description {
@@ -207,10 +230,7 @@ body {
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
-}
-
-.infrastructure {
-    padding-right: 70px;
+    text-align: center;
 }
 
 .advantages-white {
@@ -220,6 +240,7 @@ body {
 .advantages-description, .infrastructure-description {
     font-size: 18px;
     line-height: 21px;
+    text-align: center;
 }
 
 .advantages-description-white {
