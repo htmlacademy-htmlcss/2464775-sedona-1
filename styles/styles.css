@@ -44,7 +44,11 @@ body {
     margin: 0 auto;
 }
 
-.button {
+a {
+    text-decoration: none;
+}
+
+.button, .product-card-button {
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
@@ -392,6 +396,11 @@ body {
     background-color: #82b3d3;
 }
 
+.featured-products-button, .featured-chose-button {
+    width: 140px;
+    justify-self: end;
+}
+
 .reset-button {
     background: none;
     padding-top: 32px;
@@ -405,16 +414,21 @@ body {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
+    padding: 0;
+    margin: 0;
 }
 
 .product-price {
     text-align: right;
+    padding: 0;
+    margin: 0;
 }
 
 .rating {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    text-align: right;
 }
 
 .pagination {
@@ -533,4 +547,38 @@ body {
 
 .card-button {
     background: none;
+}
+.product-list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 340px 340px 340px;
+    gap: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    color: #000000;
+    margin: 20px;
+    row-gap: 16px;
+}
+
+.hotel {
+    margin: 0;
+    padding: 0;
+}
+
+.product-card-link {
+    grid-column: 1 / -1;
+}
+
+.product-card-button {
+    width: 140px;
+}
+
+.product-card-image {
+    padding-bottom: 16px;
 }
