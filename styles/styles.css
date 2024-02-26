@@ -595,3 +595,17 @@ a {
 .product-card-image {
     padding-bottom: 16px;
 }
+
+.navigation-link-current {
+    position: relative;
+}
+
+.navigation-link-current::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    bottom: -22px;
+    height: 2px;
+    background-color:  #756257;
+}
