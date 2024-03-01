@@ -289,15 +289,13 @@ a {
 
 .infrastructure-item {
     list-style: none;
-}
-
-.infrastructure-item {
-    margin: 81px 85px;
+    width: 400px;
+    padding-top: 81px;
 }
 
 .infrastructure-list {
     display: flex;
-    min-height: 385px;
+    height: 385px;
     justify-content: center;
     padding: 0;
     margin: 0;
@@ -675,5 +673,9 @@ a {
 }
 
 .advantages-item-light {
+    background-color: #83b3d312;
+}
+
+.infrastructure-item-dark {
     background-color: #83b3d312;
 }
