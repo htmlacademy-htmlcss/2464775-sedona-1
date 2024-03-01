@@ -610,3 +610,27 @@ a {
     height: 2px;
     background-color:  #756257;
 }
+
+.navigation-user-item {
+    position: relative;
+}
+
+.basket-circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #7db54f;
+    right: -8px;
+    top: -11px;
+}
+
+.basket-number {
+    position: absolute;
+    font-size: 10px;
+    line-height: 10px;
+    color: #ffffff;
+    font-weight: 400;
+    right: -3px;
+    top: -6px;
+}
