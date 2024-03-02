@@ -63,6 +63,18 @@ a {
     border-radius: 4px;
 }
 
+.button:hover {
+    background-color: #615048;
+}
+
+.button:focus {
+    background-color: #615048;
+}
+
+.button:active {
+    opacity: 30%;
+}
+
 .page-header-logo {
     margin: 0;
     padding: 0;
@@ -250,6 +262,18 @@ a {
     border-radius: 0 4px 4px 0;
 }
 
+.subscribe-button:hover {
+    background-color: #68a2ca;
+}
+
+.subscribe-button:focus {
+    background-color: #68a2ca;
+}
+
+.subscribe-button:active {
+    opacity: 30%;
+}
+
 .advantages-title, .infrastructure-title {
     font-size: 24px;
     font-weight: 700;
@@ -386,6 +410,18 @@ a {
     width: 720px;
 }
 
+.footer-phone:hover {
+    color: #756157;
+}
+
+.footer-phone:focus {
+  color: #756157;
+}
+
+.footer-phone:active {
+  color: #75615730;
+}
+
 .main-inner{
     color: #ffffff;
 }
@@ -461,8 +497,32 @@ a {
     line-height: 23px;
 }
 
-.apply-button, .featured-products-button{
+.apply-button, .featured-products-button {
     background-color: #82b3d3;
+}
+
+.apply-button:hover {
+    background-color: #68a2ca;
+}
+
+.apply-button:focus {
+    background-color: #68a2ca;
+}
+
+.apply-button:active {
+    opacity: 30%;
+}
+
+.featured-products-button:hover {
+  background-color: #68a2ca;
+}
+
+.featured-products-button:focus {
+  background-color: #68a2ca;
+}
+
+.featured-products-button:active {
+  opacity: 30%;
 }
 
 .featured-products-button, .featured-chose-button {
@@ -477,6 +537,18 @@ a {
 
 .featured-chose-button {
     background-color: #7db54f;
+}
+
+.featured-chose-button:hover {
+    background-color: #6c9e42;
+}
+
+.featured-chose-button:focus {
+    background-color: #6c9e42;
+}
+
+.featured-chose-button:active {
+    opacity: 30%;
 }
 
 .product-card-title {
@@ -656,6 +728,20 @@ a {
     background-repeat: no-repeat;
     background-position: right 20px center;
     padding-right: 35px;
+}
+
+.select-control:hover {
+    border-color: #68a2ca;
+}
+
+.select-control:focus {
+    border-color: #68a2ca;
+    outline: none
+}
+
+.select-control:active {
+    border-color: #3f5e72;
+    outline: none;
 }
 
 .cards-button-container {
