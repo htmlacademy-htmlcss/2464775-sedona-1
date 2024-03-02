@@ -449,9 +449,12 @@ a {
     font-weight: 700;
     padding: 0;
     margin: 0;
-    padding-left: 140.15px;
     padding-right: 70px;
     width: 288px;
+}
+
+.price-container {
+    padding-left: 140.15px;
 }
 
 .control-input {
@@ -810,11 +813,16 @@ a {
     height: 17px;
 }
 
-.rating-area {
-    position: relative;
+.star-card {
+    background-image: url("../images/star-rating.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 17px;
+    margin-right: 6px;
 }
 
-.rating-card {
-    position: absolute;
-    top: 25%;
+.rating-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
