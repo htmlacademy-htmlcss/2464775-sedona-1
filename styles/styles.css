@@ -356,19 +356,6 @@ a {
     color: #000000;
 }
 
-.subscription-title-catalog {
-    position: relative;
-}
-
-.subscription-title-catalog::before {
-    position: absolute;
-    content: "";
-    border-bottom: 1px solid #e6e6e6;
-    width: 1060px;
-    display: block;
-    left: 15px;
-}
-
 .subcribe-button {
     font-size: 20px;
     line-height: 36px;
@@ -408,15 +395,28 @@ a {
     flex-direction: column;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-item {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    position: relative;
+    margin-left: 28px;
 }
 
-.breadcrumbs-arrow {
-    padding-left: 10px;
-    padding-right: 10px;
+.breadcrumbs-item:not(:last-of-type):after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/breadcrumbs-arrow.svg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 20px;
+    background-size: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.breadcrumbs-item-home {
+    margin: 0;
 }
 
 .catalog-filter-title {
@@ -633,6 +633,14 @@ a {
 
 .select-control {
     width: 292px;
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 12px 18px;
+    appearance: none;
+    background-image: url("../images/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 35px;
 }
 
 .cards-button-container {
@@ -657,7 +665,7 @@ a {
     padding-right: 70px;
     padding-left: 70px;
     height: 896px;
-    margin-bottom: 81px;
+    margin-bottom: 80px;
 }
 
 .product-card {
@@ -738,4 +746,54 @@ a {
 
 .infrastructure-item-dark {
     background-color: #83b3d312;
+}
+
+.footer-social-item-vk {
+    position: relative;
+}
+
+.footer-social-item-vk::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/social-vk.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 48px;
+    height: 28px;
+    top: 0;
+}
+
+.footer-social-item-tg {
+    position: relative;
+}
+
+.footer-social-item-tg::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/social-tg.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 16px;
+}
+
+.footer-social-item-yt {
+    position: relative;
+}
+
+.footer-social-item-yt::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/social-youtube.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 17px;
+}
+
+.rating-area {
+    position: relative;
+}
+
+.rating-card {
+    position: absolute;
+    top: 25%;
 }
