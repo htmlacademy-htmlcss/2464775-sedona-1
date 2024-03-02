@@ -223,12 +223,19 @@ a {
 .subscribtion-user-email {
     width: 452px;
     padding-left: 20px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.subscribtion-user-email-catalog {
+    background-color: #f2f2f2;
 }
 
 .subscribe-button {
     width: 232px;
     height: 52px;
     background-color: #82b3d3;
+    border-radius: 0 4px 4px 0;
 }
 
 .advantages-title, .infrastructure-title {
@@ -347,6 +354,19 @@ a {
 
 .subscription-title-catalog, .subscription-description-catalog {
     color: #000000;
+}
+
+.subscription-title-catalog {
+    position: relative;
+}
+
+.subscription-title-catalog::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #e6e6e6;
+    width: 1060px;
+    display: block;
+    left: 15px;
 }
 
 .subcribe-button {
@@ -636,24 +656,18 @@ a {
     gap: 20px;
     padding-right: 70px;
     padding-left: 70px;
-    position: relative;
-}
-
-.product-list::after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #e6e6e6;
-    width: 1060px;
-    position: absolute;
-    bottom: -936px;
+    height: 896px;
+    margin-bottom: 81px;
 }
 
 .product-card {
     display: grid;
     grid-template-columns: 150px 150px;
     color: #000000;
-    margin: 20px;
+    padding: 20px;
     row-gap: 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
 }
 
 .hotel {
