@@ -251,6 +251,10 @@ a {
     padding-left: 20px;
     border: none;
     border-radius: 4px 0 0 4px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
 }
 
 .subscribtion-user-email-catalog {
@@ -575,6 +579,7 @@ a {
     line-height: 28px;
     padding: 0;
     margin: 0;
+    color: #000000;
 }
 
 .product-price {
@@ -943,14 +948,6 @@ a {
 
 .infrastructure-item-dark {
     background-color: #83b3d312;
-}
-
-.star-card {
-    background-image: url("../images/star-rating.svg");
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 17px;
-    margin-right: 6px;
 }
 
 .rating-area {
