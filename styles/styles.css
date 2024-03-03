@@ -616,6 +616,14 @@ a {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    position: relative;
+}
+
+.pagination-link::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
 }
 
 .pagination-link-current, .pagination-link-dots {
