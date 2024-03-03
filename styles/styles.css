@@ -905,3 +905,15 @@ a {
 .htmlacademy-logo:active {
     color: #75615730;
 }
+
+.breadcrumbs-link-catalog:hover {
+    color: #ffffff60;
+}
+
+.breadcrumbs-link-catalog:focus {
+    color: #ffffff;
+}
+
+.breadcrumbs-link-catalog:active {
+  color: #ffffff30;
+}
