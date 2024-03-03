@@ -876,6 +876,7 @@ a {
 
 .footer-social-icon {
     color: #83b3d3;
+    display: block;
 }
 
 .footer-social-icon:hover {
@@ -888,6 +889,11 @@ a {
 
 .footer-social-icon:active {
     color: #68a2ca30;
+}
+
+.htmlacademy-link {
+    display: flex;
+    align-items: center;
 }
 
 .htmlacademy-logo {
