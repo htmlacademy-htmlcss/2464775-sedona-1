@@ -762,7 +762,7 @@ a {
     height: 49px;
 }
 
-.select-result {
+.search-result {
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -770,7 +770,7 @@ a {
     line-height: 36px;
     margin: 0;
     padding: 0;
-    width: 538px;
+    min-width: 538px;
 }
 
 .select-control {
