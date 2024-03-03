@@ -860,47 +860,6 @@ a {
     background-color: #83b3d312;
 }
 
-.footer-social-item-vk {
-    position: relative;
-}
-
-.footer-social-item-vk::before {
-    position: absolute;
-    content: "";
-    background-image: url("../images/social-vk.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 48px;
-    height: 28px;
-    top: 0;
-}
-
-.footer-social-item-tg {
-    position: relative;
-}
-
-.footer-social-item-tg::before {
-    position: absolute;
-    content: "";
-    background-image: url("../images/social-tg.svg");
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 16px;
-}
-
-.footer-social-item-yt {
-    position: relative;
-}
-
-.footer-social-item-yt::before {
-    position: absolute;
-    content: "";
-    background-image: url("../images/social-youtube.svg");
-    background-repeat: no-repeat;
-    width: 22px;
-    height: 17px;
-}
-
 .star-card {
     background-image: url("../images/star-rating.svg");
     background-repeat: no-repeat;
@@ -913,4 +872,20 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.footer-social-icon {
+    color: #83b3d3;
+}
+
+.footer-social-icon:hover {
+    color: #68a2ca;
+}
+
+.footer-social-icon:focus {
+    color: #68a2ca;
+}
+
+.footer-social-icon:active {
+    color: #68a2ca30;
 }
