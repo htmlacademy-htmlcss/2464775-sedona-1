@@ -534,7 +534,23 @@ a {
 
 .reset-button {
     background: none;
-    padding-top: 32px;
+    padding: 0;
+    margin-top: 32px;
+}
+
+.reset-button:hover {
+    background: none;
+    opacity: 60%;
+}
+
+.reset-button:focus {
+    background: none;
+    border: 3px solid #83b3d3;
+    outline: none;
+}
+
+.reset-button:active {
+    opacity: 30%;
 }
 
 .featured-chose-button {
