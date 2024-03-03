@@ -598,6 +598,18 @@ a {
     justify-content: center;
 }
 
+.pagination-item:hover {
+    background-color: #68a2ca;
+}
+
+.pagination-item:focus {
+    background-color: #68a2ca;
+}
+
+.pagination-item:active {
+    opacity: 30%;
+}
+
 .pagination-link {
     color: #ffffff;
     font-size: 20px;
