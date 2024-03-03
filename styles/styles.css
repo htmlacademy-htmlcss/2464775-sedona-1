@@ -889,3 +889,19 @@ a {
 .footer-social-icon:active {
     color: #68a2ca30;
 }
+
+.htmlacademy-logo {
+    color: #000000;
+}
+
+.htmlacademy-logo:hover {
+    color: #756157;
+}
+
+.htmlacademy-logo:focus {
+    color: #756157;
+}
+
+.htmlacademy-logo:active {
+    color: #75615730;
+}
