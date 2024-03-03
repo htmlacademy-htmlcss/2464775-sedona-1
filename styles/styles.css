@@ -634,6 +634,18 @@ a {
     justify-content: center;
 }
 
+.pagination-item-current:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination-item-current:focus {
+    background-color: #f2f2f2;
+}
+
+.pagination-item-current:active {
+    opacity: 100%;
+}
+
 .pagination-item-dots {
     height: 60px;
     width: 60px;
