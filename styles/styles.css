@@ -926,6 +926,7 @@ a {
     background-color: #7db54f;
     right: -8px;
     top: -11px;
+    pointer-events: none;
 }
 
 .basket-number {
