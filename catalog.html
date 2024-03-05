@@ -113,6 +113,26 @@
                   </fieldset>
                   <div class="price-container">
                     <p class="price-block">Стоимость, ₽:</p>
+                    <div class="range-wrapper">
+                      <label class="prices-range">
+                        <input class="price-range price-range-min" type="number" value="0">
+                        <span class="prices price-from">от</span>
+                      </label>
+                      <label class="prices-range">
+                        <input class="price-range price-range-max" type="number" value="9000">
+                        <span class="prices price-to">до</span>
+                      </label>
+                    </div>
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить мнимальную цену</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="filter-buttons">
                     <button class="button apply-button" type="submit">Применить</button>
