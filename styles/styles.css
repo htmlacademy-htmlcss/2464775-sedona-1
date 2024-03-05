@@ -1129,3 +1129,24 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f280;
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 70px;
+    background-color: #ffffff;
+}
+
+.modal-content {
+    display: grid;
+}
