@@ -1154,9 +1154,9 @@ input::-webkit-inner-spin-button {
     background-color: #f2f2f280;
 }
 
-.modal-container-close {
+/* .modal-container-close {
     display: none;
-}
+} */
 
 .modal {
     position: relative;
@@ -1235,7 +1235,14 @@ input::-webkit-inner-spin-button {
 .title-guests {
     padding: 0;
     margin: 0;
+}
+
+.title-adults {
     padding-right: 46px;
+}
+
+.title-childs {
+    padding-right: 82px;
 }
 
 .arrival-date, .departure-date, .title-guests {
@@ -1248,6 +1255,7 @@ input::-webkit-inner-spin-button {
 
 .search-button-modal {
     width: 577px;
+    height: 60px;
     background-color: #83b3d3;
     padding: 0;
 }
@@ -1371,4 +1379,56 @@ input::-webkit-inner-spin-button {
 
 .count-number-icon:focus {
     color: #000000;
+}
+
+.tooltip-modal-childs {
+    border: none;
+    background-color: transparent;
+    margin-right: 46px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    width: 216px;
+    height: 110px;
+    background-color: #333333;
+    box-shadow: 0 4px 4px #00000025;
+    border-radius: 10px;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #ffffff;
+    padding: 15px 18px 18px 22px;
+    position: absolute;
+    top: 41px;
+    left: -56px;
+    display: none;
+}
+
+.triagle-icon-modal {
+    position: absolute;
+    color: #333333;
+    top: -9px;
+    right: 119px;
+}
+
+.tooltip-modal {
+    position: absolute;
+}
+
+.tooltip-modal-icon {
+    position: absolute;
+    top: 0;
+    left: 59px;
+}
+
+.tooltip-modal-childs:hover + .tooltip-text {
+    display: block;
+}
+
+.tooltip-modal-childs:focus + .tooltip-text {
+    display: block;
 }
