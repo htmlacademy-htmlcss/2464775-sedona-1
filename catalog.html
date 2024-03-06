@@ -298,7 +298,7 @@
               </div>
             </footer>
       </div>
-      <div class="modal-container">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <div class="title-modal-container">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -308,13 +308,13 @@
           </div>
           <div class="modal-date-container">
             <div class="modal-date-wrapper date-of-arrival">
-              <label class="arrival-date" for="arrive-date">Дата Заезда</label>
+              <label class="arrival-date" for="arrive-date">Дата Заезда:</label>
               <input class="date-input-modal arrival-date-input" type="text" id="arrive-date" name="arrival-date" placeholder="27 апреля 2020">
               <span class="calendar-icon"></span>
               <p class="comment comment-arrival-date">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="modal-date-wrapper date-of-departure">
-              <label class="departure-date" for="depart-date">Дата Выезда</label>
+              <label class="departure-date" for="depart-date">Дата Выезда:</label>
               <input class="date-input-modal departure-date-input" type="text" id="depart-date" name="departure-date" placeholder="1 сентября 2023">
               <span class="calendar-icon"></span>
               <p class="comment comment-departure-date">На эти даты есть свободные номера. Пока есть.</p>
@@ -322,17 +322,33 @@
           </div>
           <div class="search-modal-guests">
             <div class="search-adults">
-              <p class="title-guests title-adults">Взрослые</p>
-              <button class="button decrease-number" type="button"></button>
-              <input class="adults-number" type="number" value="2">
-              <button class="button increase-number" type="button"></button>
+              <p class="title-guests title-adults">Взрослые:</p>
+              <button class="button count-number count-number-decrease" type="button">
+                <svg class="count-number-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" fill="currentColor"/>
+                </svg>
+              </button>
+              <input class="quantity-guests" type="number" value="2">
+              <button class="button count-number count-number-increase" type="button">
+                <svg class="count-number-icon" width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/>
+                </svg>
+              </button>
             </div>
             <div class="search-childs">
-              <p class="title-guests title-childs">Дети</p>
+              <p class="title-guests title-childs">Дети:</p>
               <span class="attention-childs"></span>
-              <button class="button decrease-number" type="button"></button>
-              <input class="adults-number" type="number" value="2">
-              <button class="button increase-number" type="button"></button>
+              <button class="button count-number count-number-decrease" type="button">
+                <svg class="count-number-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" fill="currentColor"/>
+                </svg>
+              </button>
+              <input class="quantity-guests" type="number" value="2">
+              <button class="button count-number count-number-increase" type="button">
+                <svg class="count-number-icon" width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/>
+                </svg>
+              </button>
             </div>
           </div>
             <button class="button search-button-modal" type="submit">Найти</button>

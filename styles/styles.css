@@ -1154,6 +1154,10 @@ input::-webkit-inner-spin-button {
     background-color: #f2f2f280;
 }
 
+.modal-container-close {
+    display: none;
+}
+
 .modal {
     position: relative;
     margin: auto;
@@ -1190,6 +1194,7 @@ input::-webkit-inner-spin-button {
     background-image: url("../images/cross-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
+    padding: 0;
 }
 
 .modal-close-button:hover {
@@ -1220,6 +1225,7 @@ input::-webkit-inner-spin-button {
     font-weight: 400;
     line-height: 21px;
     text-align: left;
+    margin-left: 20px;
 }
 
 .comment-arrival-date {
@@ -1229,6 +1235,7 @@ input::-webkit-inner-spin-button {
 .title-guests {
     padding: 0;
     margin: 0;
+    padding-right: 46px;
 }
 
 .arrival-date, .departure-date, .title-guests {
@@ -1242,6 +1249,7 @@ input::-webkit-inner-spin-button {
 .search-button-modal {
     width: 577px;
     background-color: #83b3d3;
+    padding: 0;
 }
 
 .search-button-modal:hover {
@@ -1280,7 +1288,6 @@ input::-webkit-inner-spin-button {
     background-color: #f2f2f2;
     border-radius: 4px;
     padding: 0;
-    padding-left: 12px;
     margin-bottom: 4px;
     background-image: url("../images/calendar-icon.svg");
     background-repeat: no-repeat;
@@ -1293,5 +1300,75 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     line-height: 24px;
     text-align: left;
+    color: #000000;
+    padding-left: 20px;
+}
+
+.search-modal-guests {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 48px;
+    margin-top: 23px;
+    justify-content: space-between;
+}
+
+.search-adults, .search-childs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quantity-guests {
+    width: 31px;
+    height: 48px;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 0;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+
+.count-number {
+    display: flex;
+    width: 40px;
+    height: 48px;
+    background-color: #f2f2f2;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-number-decrease {
+    border-radius: 4px 0 0 4px;
+}
+
+.count-number-increase {
+    border-radius: 0 4px 4px 0;
+}
+
+.count-number:hover {
+    background-color: #ffffff;
+}
+
+.count-number:focus {
+    background-color: #ffffff;
+}
+
+.count-number:active {
+    background-color: #ffffff;
+}
+
+.count-number-icon {
+    color: #75615730;
+}
+
+.count-number-icon:hover {
+    color: #000000;
+}
+
+.count-number-icon:focus {
     color: #000000;
 }
