@@ -537,6 +537,15 @@ input::placeholder {
     border-radius: 5px;
 }
 
+.control:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.control:active {
+    opacity: 30%;
+}
+
 .control-input[type="checkbox"]:checked +.control-mark-square {
     background-image: url("../images/tick.svg");
     background-repeat: no-repeat;
@@ -1139,6 +1148,10 @@ input::placeholder {
     border-radius: 0 4px 4px 0;
 }
 
+.price-range:active {
+    border: 2px solid #000000;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -1300,6 +1313,11 @@ input::-webkit-inner-spin-button {
     background-image: url("../images/calendar-icon.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
+    cursor: pointer;
+}
+
+.date-input-modal:hover {
+    background-color: #e6e6e6;
 }
 
 .modal-date-wrapper input::placeholder {
@@ -1308,8 +1326,12 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     line-height: 24px;
     text-align: left;
-    color: #000000;
+    color: #00000060;
     padding-left: 20px;
+}
+
+.modal-date-wrapper input::placeholder:active {
+    color: #000000;
 }
 
 .search-modal-guests {
