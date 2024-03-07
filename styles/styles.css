@@ -77,6 +77,10 @@ a {
     opacity: 30%;
 }
 
+.button:disabled {
+    background-color: #e5e5e5;
+}
+
 .page-header-logo {
     margin: 0;
     padding: 0;
@@ -620,6 +624,11 @@ input::placeholder {
     opacity: 30%;
 }
 
+.reset-button:disabled {
+    opacity: 10%;
+    background: none;
+}
+
 .featured-chose-button {
     background-color: #7db54f;
 }
@@ -861,6 +870,10 @@ input::placeholder {
 .select-control:active {
     border-color: #3f5e72;
     outline: none;
+}
+
+.select-control:disabled {
+    opacity: 30%;
 }
 
 .cards-button-container {
@@ -1134,7 +1147,6 @@ input::placeholder {
 
 .prices {
     position: absolute;
-    z-index: 1;
     top: 12px;
     right: 20px;
 }
@@ -1167,9 +1179,9 @@ input::-webkit-inner-spin-button {
     background-color: #f2f2f280;
 }
 
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 .modal {
     position: relative;
