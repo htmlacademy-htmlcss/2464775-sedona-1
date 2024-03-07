@@ -1081,6 +1081,10 @@ input::placeholder {
     color: #75615730;
 }
 
+.breadcrumbs-link-catalog {
+    pointer-events: none;
+}
+
 .breadcrumbs-link-catalog:hover {
     color: #ffffff60;
     cursor: pointer;
