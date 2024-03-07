@@ -1081,7 +1081,7 @@ input::placeholder {
     color: #75615730;
 }
 
-.breadcrumbs-link-catalog {
+.breadcrumbs-container li:last-of-type {
     pointer-events: none;
 }
 
