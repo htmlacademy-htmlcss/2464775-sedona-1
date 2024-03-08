@@ -1004,14 +1004,18 @@ input::placeholder {
     position: relative;
 }
 
+.page-header-icon {
+    color: #000000;
+}
+
 .basket-circle {
     position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #7db54f;
-    right: -3px;
-    top: -11px;
+    right: -4px;
+    top: -13px;
     pointer-events: none;
 }
 
@@ -1021,8 +1025,9 @@ input::placeholder {
     line-height: 10px;
     color: #ffffff;
     font-weight: 400;
-    right: 2px;
-    top: -6px;
+    right: 1px;
+    top: -8px;
+    pointer-events: none;
 }
 
 .advantages-item-road {
