@@ -923,16 +923,6 @@ input::placeholder {
     padding-left: 70px;
 }
 
-.card-button-img-1, .card-button-img-2 {
-    margin-right: 8px;
-}
-
-.card-button-img {
-    padding: 15px 14px;
-    border: 2px solid #e6e6e6;
-    border-radius: 4px;
-}
-
 .card-button-img:hover {
     border-color: #000000;
 }
@@ -947,20 +937,49 @@ input::placeholder {
 
 .card-button {
     background: none;
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
     padding: 0;
 }
 
 .card-button:hover {
-    background: none;
+    background-color: #ffffff;
 }
 
 .card-button:focus {
-    background: none;
+    background-color: #ffffff;
 }
 
 .card-button:active {
-    background: none;
+    background-color: #ffffff;
     opacity: 100%;
+}
+
+.card-button-img-1 {
+    background-image: url("../images/view-card-1.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 14px;
+    background-position: center;
+}
+
+.card-button-img-2 {
+    background-image: url("../images/view-card-2.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 14px;
+    background-position: center;
+}
+
+.card-button-img-3 {
+    background-image: url("../images/view-card-3.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 14px;
+    background-position: center;
+}
+
+.card-button-img-1, .card-button-img-2 {
+    margin-right: 8px;
 }
 
 .visually-hidden {
