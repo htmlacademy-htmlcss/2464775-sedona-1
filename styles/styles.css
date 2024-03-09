@@ -1189,7 +1189,14 @@ input::placeholder {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 36px;
+}
+
+.range-toggle:focus {
+    outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
 }
 
 .toggle-min {
@@ -1213,6 +1220,7 @@ input::placeholder {
     font-weight: 700;
     line-height: 24px;
     text-align: left;
+    cursor: pointer;
 }
 
 .prices-range {
@@ -1233,14 +1241,46 @@ input::placeholder {
 .price-range-min {
     margin-right: 2px;
     border-radius: 4px 0 0 4px;
+    background-color: #f2f2f2;
 }
 
 .price-range-max {
     border-radius: 0 4px 4px 0;
+    background-color: #f2f2f2;
 }
 
-.price-range:active {
-    border: 2px solid #000000;
+.price-range-min:hover {
+    margin-right: 2px;
+    border-radius: 4px 0 0 4px;
+    background-color: #e6e6e6;
+}
+
+.price-range-max:hover {
+    border-radius: 0 4px 4px 0;
+    background-color: #e6e6e6;
+}
+
+.price-range-min:focus {
+    margin-right: 2px;
+    border-radius: 4px 0 0 4px;
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
+}
+
+.price-range-max:focus {
+    border-radius: 0 4px 4px 0;
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
+}
+
+.price-range-min:active {
+    border-radius: 4px 0 0 4px;
+    outline: 2px solid #000000;
+}
+
+.price-range-max:active {
+    border-radius: 0 4px 4px 0;
+    outline: 2px solid #000000;
 }
 
 input::-webkit-outer-spin-button,
