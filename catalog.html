@@ -128,20 +128,20 @@
                     <p class="price-block">Стоимость, ₽:</p>
                     <div class="range-wrapper">
                       <label class="prices-range">
-                        <input class="price-range price-range-min" type="number" value="0">
+                        <input class="price-range price-range-min" type="number" name="price-min" value="0">
                         <span class="prices price-from">от</span>
                       </label>
                       <label class="prices-range">
-                        <input class="price-range price-range-max" type="number" value="9000">
+                        <input class="price-range price-range-max" type="number" name="price-max" value="9000">
                         <span class="prices price-to">до</span>
                       </label>
                     </div>
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 226px">
-                        <button class="range-toggle toggle-min">
+                        <button type="button" class="range-toggle toggle-min">
                           <span class="visually-hidden">Изменить мнимальную цену</span>
                         </button>
-                        <button class="range-toggle toggle-max">
+                        <button type="button" class="range-toggle toggle-max">
                           <span class="visually-hidden">Изменить максимальную цену</span>
                         </button>
                       </div>
@@ -163,13 +163,13 @@
                   <option value="popular">Сначала популярные</option>
                 </select>
                 <div class="cards-button-container">
-                <button class="button card-button card-button-img card-button-img-1">
+                <button type="button" class="button card-button card-button-img card-button-img-1">
                   <span class="visually-hidden">Показать карточки</span>
                 </button>
-                <button class="button card-button card-button-img card-button-img-2">
+                <button type="button" class="button card-button card-button-img card-button-img-2">
                   <span class="visually-hidden">Показать карточку</span>
                 </button>
-                <button class="button card-button card-button-img card-button-img-3">
+                <button type="button" class="button card-button card-button-img card-button-img-3">
                   <span class="visually-hidden">Показать список</span>
                 </button>
                 </div>
@@ -306,7 +306,7 @@
         <div class="modal modal-search">
           <div class="title-modal-container">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <button class="button modal-close-button">
+            <button type="button" class="button modal-close-button">
               <span class="visually-hidden">Закрыть</span>
             </button>
           </div>

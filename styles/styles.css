@@ -719,7 +719,7 @@ input::placeholder {
 
 .pagination-item {
     height: 60px;
-    width: 60px;
+    min-width: 60px;
     border-radius: 4px;
     background-color: #82b3d3;
     list-style: none;
@@ -802,6 +802,8 @@ input::placeholder {
     padding: 0;
     align-items: center;
     margin-right: 41.5px;
+    flex-wrap: wrap;
+    width: 142px;
 }
 
 .footer-social-item {
@@ -871,10 +873,11 @@ input::placeholder {
 
 .select-container {
     display: flex;
+    flex-wrap: wrap;
     color: #000000;
     margin: 0;
     padding: 50px 70px 40px;
-    height: 49px;
+    width: 1060px;
 }
 
 .search-result {
@@ -919,8 +922,12 @@ input::placeholder {
 }
 
 .cards-button-container {
-    display: flex;
+    display: grid;
+    min-height: 48px;
+    grid-template-columns: 48px 48px 48px;
+    width: 160px;
     padding-left: 70px;
+    gap: 8px;
 }
 
 .card-button-img:hover {
@@ -976,10 +983,6 @@ input::placeholder {
     background-repeat: no-repeat;
     background-size: 16px 14px;
     background-position: center;
-}
-
-.card-button-img-1, .card-button-img-2 {
-    margin-right: 8px;
 }
 
 .visually-hidden {
