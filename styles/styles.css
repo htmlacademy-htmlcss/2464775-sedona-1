@@ -1288,6 +1288,10 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 .modal-container {
     position: fixed;
     top: 0;
