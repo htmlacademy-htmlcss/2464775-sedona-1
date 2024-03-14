@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -364,6 +364,7 @@ input::placeholder {
 
 .advantages-description {
     margin: 0;
+    width: 235px;
 }
 
 .advantages-description-white {
@@ -1348,6 +1349,8 @@ input[type='number'] {
     background-repeat: no-repeat;
     background-position: center;
     padding: 0;
+    position: absolute;
+    left: 543px;
 }
 
 .modal-close-button:hover {
@@ -1367,7 +1370,7 @@ input[type='number'] {
 .title-modal-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    position: relative;
 }
 
 .comment {
@@ -1444,7 +1447,7 @@ input[type='number'] {
 
 .date-input-modal {
     border: none;
-    width: 440px;
+    width: 420px;
     height: 48px;
     background-color: #f2f2f2;
     border-radius: 4px;
