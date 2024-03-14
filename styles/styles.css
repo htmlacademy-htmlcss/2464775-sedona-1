@@ -402,20 +402,7 @@ input::placeholder {
     line-height: 36px;
     width: 376px;
     height: 52px;
-    background-color: #82b3d3;
     padding: 0;
-}
-
-.search-button:hover {
-  background-color: #68a2ca;
-}
-
-.search-button:focus {
-  background-color: #68a2ca;
-}
-
-.search-button:active {
-  opacity: 30%;
 }
 
 .subscription {
@@ -511,19 +498,17 @@ input::placeholder {
     margin: 0;
     padding: 0;
     position: relative;
-    margin-left: 18px;
 }
 
-.breadcrumbs-item:not(:last-of-type):after {
+.breadcrumbs-item:not(:first-of-type)::before {
     position: absolute;
     content: "";
     background-image: url(../images/breadcrumbs-arrow.svg);
     background-repeat: no-repeat;
     width: 8px;
     height: 20px;
-    background-size: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .breadcrumbs-item-home {
@@ -901,6 +886,7 @@ input::placeholder {
     background-repeat: no-repeat;
     background-position: right 20px center;
     padding-right: 35px;
+    background-color: #ffffff;
 }
 
 .select-control:hover {
@@ -949,6 +935,10 @@ input::placeholder {
     width: 48px;
     height: 48px;
     padding: 0;
+}
+
+.card-button-current {
+    border: 2px solid #000000;
 }
 
 .card-button:hover {
@@ -1145,6 +1135,10 @@ input::placeholder {
     pointer-events: none;
 }
 
+.breadcrumbs-link-catalog {
+    margin-left: 28px;
+}
+
 .breadcrumbs-link-catalog:hover {
     color: #ffffff60;
     cursor: pointer;
@@ -1156,10 +1150,6 @@ input::placeholder {
 
 .breadcrumbs-link-catalog:active {
     color: #ffffff30;
-}
-
-.breadcrumbs-link  {
-    padding: 5px 5px 5px 0;
 }
 
 .range-wrapper {
