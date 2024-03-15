@@ -1330,9 +1330,9 @@ input[type='number'] {
     background-color: #f2f2f280;
 }
 
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 .modal {
     position: relative;
