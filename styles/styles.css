@@ -76,7 +76,7 @@ a {
     background-color: #756157;
     text-align: center;
     text-decoration: none;
-    height: 36px;
+    min-height: 36px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -103,6 +103,7 @@ a {
     padding: 0;
     margin-left: 70px;
     margin-right: 30px;
+    position: relative;
 }
 
 .hero-img {
@@ -136,10 +137,12 @@ a {
 .navigation {
     display: flex;
     height: 64px;
+    flex-wrap: wrap;
 }
 
 .navigation-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     list-style: none;
@@ -151,6 +154,7 @@ a {
 
 .navigation-user {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     margin: 0;
@@ -164,7 +168,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 160px;
-    height: 36px;
+    min-height: 36px;
     margin: 14px 70px 14px 20px;
 }
 
@@ -263,11 +267,12 @@ a {
 .subscription-button-container {
     display: flex;
     width: 684px;
-    height: 52px;
+    min-height: 52px;
 }
 
 .subscription-form-name {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -289,9 +294,11 @@ a {
 
 .subscribe-button {
     width: 232px;
-    height: 52px;
+    min-height: 52px;
     background-color: #82b3d3;
     border-radius: 0 4px 4px 0;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 .subscribe-button:hover {
@@ -309,7 +316,7 @@ a {
 input::placeholder {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-  }
+}
 
 .advantages-title, .infrastructure-title {
     font-size: 24px;
@@ -405,7 +412,8 @@ input::placeholder {
 
 .infrastructure-list {
     display: flex;
-    height: 385px;
+    flex-wrap: wrap;
+    min-height: 385px;
     justify-content: center;
     padding: 0;
     margin: 0;
@@ -419,7 +427,7 @@ input::placeholder {
     font-size: 20px;
     line-height: 36px;
     width: 376px;
-    height: 52px;
+    min-height: 52px;
     padding: 0;
 }
 
@@ -458,12 +466,6 @@ input::placeholder {
 
 .subscription-title-catalog, .subscription-description-catalog {
     color: #000000;
-}
-
-.subcribe-button {
-    font-size: 20px;
-    line-height: 36px;
-    background-color: #0000ff;
 }
 
 .footer-phone {
@@ -951,7 +953,7 @@ input::placeholder {
     border: 2px solid #e6e6e6;
     border-radius: 4px;
     width: 48px;
-    height: 48px;
+    min-height: 48px;
     padding: 0;
 }
 
@@ -1058,7 +1060,7 @@ input::placeholder {
     content: "";
     right: 0;
     left: 0;
-    bottom: -17px;
+    bottom: -10px;
     height: 2px;
     background-color:  #756257;
 }
@@ -1344,7 +1346,7 @@ input[type='number'] {
 
 .modal-close-button {
     width: 52px;
-    height: 52px;
+    min-height: 52px;
     border-radius: 50%;
     background-color: #f2f2f2;
     background-image: url("../images/cross-icon.svg");
@@ -1413,7 +1415,7 @@ input[type='number'] {
 
 .search-button-modal {
     width: 577px;
-    height: 60px;
+    min-height: 60px;
     background-color: #83b3d3;
     padding: 0;
 }
