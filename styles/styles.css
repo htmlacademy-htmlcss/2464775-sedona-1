@@ -98,12 +98,6 @@ a {
     background-color: #e5e5e5;
 }
 
-.page-header-logo {
-    margin: 0 30px 0 0;
-    padding: 0;
-    position: relative;
-}
-
 .hero-img {
     padding-top: 51px;
     padding-bottom: 82px;
@@ -130,7 +124,7 @@ a {
     text-transform: capitalize;
     text-decoration: none;
     text-align: center;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .navigation-user-link {
@@ -139,7 +133,7 @@ a {
 
 .navigation-list {
     padding: 0;
-    padding-right: 280px;
+    padding-right: 283px;
     margin: 0;
     list-style: none;
     display: flex;
@@ -157,7 +151,7 @@ a {
 }
 
 .navigation-item {
-    padding: 15px 11px;
+    padding: 15px 16px;
 }
 
 .header-button {
@@ -189,6 +183,13 @@ a {
     bottom: 0;
 }
 
+.page-header-logo {
+    margin: 0 30px 0 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
 .main-index {
     background-size: 1200px 485px;
     background-repeat: no-repeat;
@@ -204,7 +205,11 @@ a {
 .advantages-item-container {
     width: 230px;
     padding: 102px 85px;
-    min-height: 181px;
+}
+
+.advantages-item-container-text {
+    padding-top: 112.5px;
+    padding-bottom: 112.5px;
 }
 
 .advantages-item-wide {
@@ -229,21 +234,34 @@ a {
     padding: 0;
 }
 
-.thesis {
+.thesis-town {
     margin-top: 69px;
+    margin-bottom: 25px;
 }
 
-.thesis-decription {
+.thesis-comfort {
+    margin-top: 64px;
+    margin-bottom: 20px;
+}
+
+.thesis-description {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 64px;
     padding: 0;
     margin: 0;
-    padding-bottom: 69px;
+    padding-bottom: 90px;
 }
 
-.thesis-description, .search-description {
+.thesis-description-comfort {
+    padding-bottom: 64px;
+}
+
+.thesis-description,
+.search-description {
+    font-family: "PT Sans";
+    font-weight: 400;
     text-align: center;
     font-size: 22px;
     line-height: 26px;
@@ -275,14 +293,13 @@ a {
 }
 
 .subscribtion-user-email {
-    width: 452px;
-    padding-left: 20px;
+    width: 432px;
     border: none;
     border-radius: 4px 0 0 4px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-
+    padding: 0 0 0 20px;
 }
 
 .subscribtion-user-email-catalog {
@@ -472,6 +489,7 @@ input::placeholder {
     color:#000000;
     font-size: 40px;
     line-height: 40px;
+    font-weight: 400;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
@@ -502,7 +520,7 @@ input::placeholder {
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
-    margin: 0;
+    margin: 0 0 8px 0;
     padding: 0;
 }
 
@@ -542,7 +560,7 @@ input::placeholder {
     font-weight: 700;
     line-height: 24px;
     text-transform: capitalize;
-    padding-bottom: 32px;
+    padding: 0 0 32px 0;
 }
 
 .catalog-filter {
@@ -691,6 +709,7 @@ input::placeholder {
     font-weight: 700;
     line-height: 28px;
     padding: 0;
+    padding-top: 12px;
     margin: 0;
     color: #000000;
 }
@@ -755,20 +774,13 @@ input::placeholder {
     position: relative;
 }
 
-.pagination-link::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-}
-
 .pagination-link-current, .pagination-link-dots {
     color: #000000;
 }
 
 .pagination-item-current {
     height: 60px;
-    width: 60px;
+    min-width: 60px;
     list-style: none;
     background-color: #f2f2f2;
     border-radius: 4px;
@@ -792,7 +804,7 @@ input::placeholder {
 
 .pagination-item-dots {
     height: 60px;
-    width: 60px;
+    min-width: 60px;
     list-style: none;
     margin-right: 8px;
     display: flex;
@@ -806,7 +818,6 @@ input::placeholder {
     margin: 0;
     padding: 0;
     align-items: center;
-    margin-right: 41.5px;
     flex-wrap: wrap;
     width: 142px;
 }
@@ -854,7 +865,7 @@ input::placeholder {
 }
 
 .catalog-filter-item {
-    padding-bottom: 16px;
+    padding-bottom: 19px;
 }
 
 .catalog-filter-group {
@@ -909,6 +920,11 @@ input::placeholder {
     background-position: right 20px center;
     padding-right: 35px;
     background-color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
 }
 
 .select-control:hover {
@@ -1027,7 +1043,7 @@ input::placeholder {
     display: grid;
     grid-template-columns: 150px 150px;
     color: #000000;
-    padding: 20px;
+    padding: 19px;
     row-gap: 16px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
@@ -1049,10 +1065,6 @@ input::placeholder {
     width: 140px;
 }
 
-.product-card-image {
-    padding-bottom: 16px;
-}
-
 .navigation-link-current {
     position: relative;
 }
@@ -1065,6 +1077,7 @@ input::placeholder {
     bottom: -15px;
     height: 2px;
     background-color:  #756257;
+    z-index: 1;
 }
 
 .navigation-user-item {
@@ -1082,8 +1095,8 @@ input::placeholder {
     height: 20px;
     border-radius: 50%;
     background-color: #7db54f;
-    right: 2px;
-    top: 5px;
+    right: 3px;
+    top: 7px;
     pointer-events: none;
 }
 
@@ -1093,8 +1106,8 @@ input::placeholder {
     line-height: 10px;
     color: #ffffff;
     font-weight: 400;
-    right: 7px;
-    top: 10px;
+    right: 8px;
+    top: 13px;
     pointer-events: none;
 }
 
@@ -1177,6 +1190,7 @@ input::placeholder {
 
 .range-wrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 288px;
     margin-bottom: 44px;
 }
@@ -1226,7 +1240,7 @@ input::placeholder {
     margin: 0;
     padding-left: 20px;
     width: 123px;
-    height: 48px;
+    min-height: 48px;
     border: none;
     font-family: "PT Sans";
     font-size: 18px;
