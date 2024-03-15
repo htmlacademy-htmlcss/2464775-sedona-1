@@ -737,7 +737,7 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding: 40px 70px 60px;
+    padding: 40px 70px 52px;
 }
 
 .pagination-item {
@@ -1032,11 +1032,12 @@ input::placeholder {
 
 .product-list::after {
     position: absolute;
-    border: 1px solid #e6e6e6;
     content: "";
     width: 1060px;
     left: 70px;
-    top: 946.5px;
+    top: 935.5px;
+    height: 0.5px;
+    background-color: #e6e6e6;
 }
 
 .product-card {
@@ -1329,9 +1330,9 @@ input[type='number'] {
     background-color: #f2f2f280;
 }
 
-.modal-container-close {
+/* .modal-container-close {
     display: none;
-}
+} */
 
 .modal {
     position: relative;
@@ -1341,12 +1342,17 @@ input[type='number'] {
     border-radius: 30px;
 }
 
+.modal-search {
+    box-shadow: 0 25px 50px #00000015;
+}
+
 .modal-date-container {
     display: grid;
     grid-template-columns: 137px 440px;
     grid-template-rows: 73px 73px;
     height: 146px;
     width: 577px;
+    row-gap: 23px;
 }
 
 .modal-title {
@@ -1464,6 +1470,7 @@ input[type='number'] {
     height: 73px;
     width: 577px;
     align-items: center;
+    row-gap: 4px;
 }
 
 .date-input-modal {
@@ -1473,10 +1480,9 @@ input[type='number'] {
     background-color: #f2f2f2;
     border-radius: 4px;
     padding: 0;
-    margin-bottom: 4px;
     background-image: url("../images/calendar-icon.svg");
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 22px center;
     cursor: pointer;
     font-family: "PT Sans";
     font-size: 18px;
@@ -1507,7 +1513,7 @@ input[type='number'] {
     display: flex;
     flex-direction: row;
     margin-bottom: 48px;
-    margin-top: 23px;
+    padding-top: 48px;
     justify-content: space-between;
 }
 
