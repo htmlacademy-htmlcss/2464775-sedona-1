@@ -751,6 +751,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .pagination-item:hover {
@@ -772,6 +773,15 @@ input::placeholder {
     line-height: 36px;
     text-transform: uppercase;
     position: relative;
+}
+
+.pagination-link::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: -12px;
+    left: -24px;
 }
 
 .pagination-link-current, .pagination-link-dots {
