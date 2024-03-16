@@ -248,9 +248,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 64px;
+    margin: 0 0 64px 0;
     padding: 0;
-    margin: 0;
     padding-bottom: 90px;
 }
 
@@ -260,7 +259,7 @@ a {
 
 .thesis-description,
 .search-description {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 22px;
@@ -539,7 +538,7 @@ input::placeholder {
 .breadcrumbs-item:not(:first-of-type)::before {
     position: absolute;
     content: "";
-    background-image: url(../images/breadcrumbs-arrow.svg);
+    background-image: url("../images/breadcrumbs-arrow.svg");
     background-repeat: no-repeat;
     width: 8px;
     height: 20px;
@@ -938,7 +937,7 @@ input::placeholder {
     background-position: right 20px center;
     padding-right: 35px;
     background-color: #ffffff;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -1261,7 +1260,7 @@ input::placeholder {
     width: 123px;
     min-height: 48px;
     border: none;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1271,7 +1270,7 @@ input::placeholder {
 
 .prices-range {
     position: relative;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -1374,7 +1373,7 @@ input[type='number'] {
 }
 
 .modal-title {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -1421,7 +1420,7 @@ input[type='number'] {
 .comment {
     padding: 0;
     margin: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -1447,7 +1446,7 @@ input[type='number'] {
 }
 
 .arrival-date, .departure-date, .title-guests {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -1503,7 +1502,7 @@ input[type='number'] {
     background-repeat: no-repeat;
     background-position: right 22px center;
     cursor: pointer;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1516,7 +1515,7 @@ input[type='number'] {
 }
 
 .modal-date-wrapper input::placeholder {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1548,7 +1547,7 @@ input[type='number'] {
     border: none;
     background-color: #f2f2f2;
     padding: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -1611,7 +1610,7 @@ input[type='number'] {
     background-color: #333333;
     box-shadow: 0 4px 4px #00000025;
     border-radius: 10px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
