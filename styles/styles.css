@@ -605,6 +605,14 @@ input::placeholder {
     cursor: pointer;
 }
 
+.control-input[type="checkbox"]:focus +.control-mark-square {
+    border: 3px solid #83b3d3;
+}
+
+.control-input[type="radio"]:focus +.control-mark-circle {
+    border: 3px solid #83b3d3;
+}
+
 .control:active {
     opacity: 30%;
 }
