@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -30,13 +30,30 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     margin: 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
     background-color: #ffffff;
+}
+
+.container-main-page, .container-catalog {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .container-main-page, .container-catalog, .page-footer {
@@ -59,7 +76,7 @@ a {
     background-color: #756157;
     text-align: center;
     text-decoration: none;
-    height: 36px;
+    min-height: 36px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -81,16 +98,22 @@ a {
     background-color: #e5e5e5;
 }
 
-.page-header-logo {
-    margin: 0;
-    padding: 0;
-    margin-left: 70px;
-    margin-right: 30px;
-}
-
 .hero-img {
     padding-top: 51px;
     padding-bottom: 82px;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 64px;
+    padding: 0 70px;
+    align-items: center;
+    align-content: center;
+}
+
+.navigation-logo {
+    height: 64px;
 }
 
 .navigation-link {
@@ -101,45 +124,34 @@ a {
     text-transform: capitalize;
     text-decoration: none;
     text-align: center;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .navigation-user-link {
     padding: 5px;
 }
 
-.header-container {
-    display: flex;
-}
-
-.page-header {
-    display: flex;
-}
-
-.navigation {
-    display: flex;
-    height: 64px;
-}
-
 .navigation-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    width: 339px;
-    margin: 0;
-    margin-right: 285px;
     padding: 0;
+    padding-right: 283px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 339px;
 }
 
 .navigation-user {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
     width: 88px;
+}
+
+.navigation-item {
+    padding: 15px 16px;
 }
 
 .header-button {
@@ -147,16 +159,17 @@ a {
     align-items: center;
     justify-content: center;
     width: 160px;
-    height: 36px;
-    margin: 14px 70px 14px 20px;
+    min-height: 36px;
+    margin-left: 20px;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("");
+    background: url("../images/background-image.jpg");
     position: relative;
+    background-color: #192d38;
 }
 
 .hero::after {
@@ -170,8 +183,14 @@ a {
     bottom: 0;
 }
 
+.page-header-logo {
+    margin: 0 30px 0 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
 .main-index {
-    background-image: url("../images/background-image.jpg");
     background-size: 1200px 485px;
     background-repeat: no-repeat;
 }
@@ -186,7 +205,11 @@ a {
 .advantages-item-container {
     width: 230px;
     padding: 102px 85px;
-    min-height: 181px;
+}
+
+.advantages-item-container-text {
+    padding-top: 112.5px;
+    padding-bottom: 112.5px;
 }
 
 .advantages-item-wide {
@@ -211,21 +234,34 @@ a {
     padding: 0;
 }
 
-.thesis {
+.thesis-town {
     margin-top: 69px;
+    margin-bottom: 25px;
 }
 
-.thesis-decription {
+.thesis-comfort {
+    margin-top: 64px;
+    margin-bottom: 20px;
+}
+
+.thesis-description {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 64px;
     padding: 0;
     margin: 0;
-    padding-bottom: 69px;
+    padding-bottom: 90px;
 }
 
-.thesis-description, .search-description {
+.thesis-description-comfort {
+    padding-bottom: 64px;
+}
+
+.thesis-description,
+.search-description {
+    font-family: "PT Sans";
+    font-weight: 400;
     text-align: center;
     font-size: 22px;
     line-height: 26px;
@@ -246,24 +282,24 @@ a {
 .subscription-button-container {
     display: flex;
     width: 684px;
-    height: 52px;
+    min-height: 52px;
 }
 
 .subscription-form-name {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
 .subscribtion-user-email {
-    width: 452px;
-    padding-left: 20px;
+    width: 432px;
     border: none;
     border-radius: 4px 0 0 4px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-
+    padding: 0 0 0 20px;
 }
 
 .subscribtion-user-email-catalog {
@@ -272,9 +308,11 @@ a {
 
 .subscribe-button {
     width: 232px;
-    height: 52px;
+    min-height: 52px;
     background-color: #82b3d3;
     border-radius: 0 4px 4px 0;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 .subscribe-button:hover {
@@ -292,7 +330,7 @@ a {
 input::placeholder {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-  }
+}
 
 .advantages-title, .infrastructure-title {
     font-size: 24px;
@@ -349,6 +387,7 @@ input::placeholder {
 
 .advantages-description {
     margin: 0;
+    width: 235px;
 }
 
 .advantages-description-white {
@@ -387,7 +426,8 @@ input::placeholder {
 
 .infrastructure-list {
     display: flex;
-    height: 385px;
+    flex-wrap: wrap;
+    min-height: 385px;
     justify-content: center;
     padding: 0;
     margin: 0;
@@ -401,21 +441,8 @@ input::placeholder {
     font-size: 20px;
     line-height: 36px;
     width: 376px;
-    height: 52px;
-    background-color: #82b3d3;
+    min-height: 52px;
     padding: 0;
-}
-
-.search-button:hover {
-  background-color: #68a2ca;
-}
-
-.search-button:focus {
-  background-color: #68a2ca;
-}
-
-.search-button:active {
-  opacity: 30%;
 }
 
 .subscription {
@@ -423,6 +450,7 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     background-image: url("../images/subscription-image.jpg");
+    background-color: #192d38;
     background-size: 1200px 414,86px;
     background-repeat: no-repeat;
     padding: 96px 258px 104px;
@@ -455,18 +483,13 @@ input::placeholder {
     color: #000000;
 }
 
-.subcribe-button {
-    font-size: 20px;
-    line-height: 36px;
-    background-color: #0000ff;
-}
-
 .footer-phone {
     display: flex;
     font-style: normal;
     color:#000000;
     font-size: 40px;
     line-height: 40px;
+    font-weight: 400;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
@@ -497,7 +520,7 @@ input::placeholder {
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
-    margin: 0;
+    margin: 0 0 8px 0;
     padding: 0;
 }
 
@@ -511,19 +534,17 @@ input::placeholder {
     margin: 0;
     padding: 0;
     position: relative;
-    margin-left: 18px;
 }
 
-.breadcrumbs-item:not(:last-of-type):after {
+.breadcrumbs-item:not(:first-of-type)::before {
     position: absolute;
     content: "";
     background-image: url(../images/breadcrumbs-arrow.svg);
     background-repeat: no-repeat;
     width: 8px;
     height: 20px;
-    background-size: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .breadcrumbs-item-home {
@@ -539,7 +560,7 @@ input::placeholder {
     font-weight: 700;
     line-height: 24px;
     text-transform: capitalize;
-    padding-bottom: 32px;
+    padding: 0 0 32px 0;
 }
 
 .catalog-filter {
@@ -688,6 +709,7 @@ input::placeholder {
     font-weight: 700;
     line-height: 28px;
     padding: 0;
+    padding-top: 12px;
     margin: 0;
     color: #000000;
 }
@@ -706,15 +728,16 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     width: 140px;
-    height: 37px;
+    min-height: 37px;
     background-color: #f2f2f2;
     justify-self: end;
 }
 
 .pagination {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 40px 70px 60px;
+    padding: 40px 70px 52px;
 }
 
 .pagination-item {
@@ -724,6 +747,7 @@ input::placeholder {
     background-color: #82b3d3;
     list-style: none;
     margin-right: 8px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -750,20 +774,13 @@ input::placeholder {
     position: relative;
 }
 
-.pagination-link::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-}
-
 .pagination-link-current, .pagination-link-dots {
     color: #000000;
 }
 
 .pagination-item-current {
     height: 60px;
-    width: 60px;
+    min-width: 60px;
     list-style: none;
     background-color: #f2f2f2;
     border-radius: 4px;
@@ -787,7 +804,7 @@ input::placeholder {
 
 .pagination-item-dots {
     height: 60px;
-    width: 60px;
+    min-width: 60px;
     list-style: none;
     margin-right: 8px;
     display: flex;
@@ -801,7 +818,6 @@ input::placeholder {
     margin: 0;
     padding: 0;
     align-items: center;
-    margin-right: 41.5px;
     flex-wrap: wrap;
     width: 142px;
 }
@@ -827,6 +843,7 @@ input::placeholder {
 
 .filter-container {
     background-image: url("../images/filter-background.jpg");
+    background-color: #192d38;
     background-size: 1200px 412px;
     background-repeat: no-repeat;
     padding: 35px 70px 70px;
@@ -838,6 +855,7 @@ input::placeholder {
     padding: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .catalog-filter-list {
@@ -847,7 +865,7 @@ input::placeholder {
 }
 
 .catalog-filter-item {
-    padding-bottom: 16px;
+    padding-bottom: 19px;
 }
 
 .catalog-filter-group {
@@ -901,6 +919,12 @@ input::placeholder {
     background-repeat: no-repeat;
     background-position: right 20px center;
     padding-right: 35px;
+    background-color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
 }
 
 .select-control:hover {
@@ -947,8 +971,12 @@ input::placeholder {
     border: 2px solid #e6e6e6;
     border-radius: 4px;
     width: 48px;
-    height: 48px;
+    min-height: 48px;
     padding: 0;
+}
+
+.card-button-current {
+    border: 2px solid #000000;
 }
 
 .card-button:hover {
@@ -1004,18 +1032,19 @@ input::placeholder {
 
 .product-list::after {
     position: absolute;
-    border: 1px solid #e6e6e6;
     content: "";
     width: 1060px;
     left: 70px;
-    top: 946.5px;
+    top: 935.5px;
+    height: 0.5px;
+    background-color: #e6e6e6;
 }
 
 .product-card {
     display: grid;
     grid-template-columns: 150px 150px;
     color: #000000;
-    padding: 20px;
+    padding: 19px;
     row-gap: 16px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
@@ -1037,10 +1066,6 @@ input::placeholder {
     width: 140px;
 }
 
-.product-card-image {
-    padding-bottom: 16px;
-}
-
 .navigation-link-current {
     position: relative;
 }
@@ -1050,13 +1075,15 @@ input::placeholder {
     content: "";
     right: 0;
     left: 0;
-    bottom: -17px;
+    bottom: -15px;
     height: 2px;
     background-color:  #756257;
+    z-index: 1;
 }
 
 .navigation-user-item {
     position: relative;
+    padding: 17px 7px;
 }
 
 .page-header-icon {
@@ -1069,8 +1096,8 @@ input::placeholder {
     height: 20px;
     border-radius: 50%;
     background-color: #7db54f;
-    right: -4px;
-    top: -13px;
+    right: 3px;
+    top: 7px;
     pointer-events: none;
 }
 
@@ -1080,8 +1107,8 @@ input::placeholder {
     line-height: 10px;
     color: #ffffff;
     font-weight: 400;
-    right: 1px;
-    top: -8px;
+    right: 8px;
+    top: 13px;
     pointer-events: none;
 }
 
@@ -1145,6 +1172,10 @@ input::placeholder {
     pointer-events: none;
 }
 
+.breadcrumbs-link-catalog {
+    margin-left: 28px;
+}
+
 .breadcrumbs-link-catalog:hover {
     color: #ffffff60;
     cursor: pointer;
@@ -1158,12 +1189,9 @@ input::placeholder {
     color: #ffffff30;
 }
 
-.breadcrumbs-link  {
-    padding: 5px 5px 5px 0;
-}
-
 .range-wrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 288px;
     margin-bottom: 44px;
 }
@@ -1213,7 +1241,7 @@ input::placeholder {
     margin: 0;
     padding-left: 20px;
     width: 123px;
-    height: 48px;
+    min-height: 48px;
     border: none;
     font-family: "PT Sans";
     font-size: 18px;
@@ -1288,6 +1316,10 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 .modal-container {
     position: fixed;
     top: 0;
@@ -1310,12 +1342,17 @@ input::-webkit-inner-spin-button {
     border-radius: 30px;
 }
 
+.modal-search {
+    box-shadow: 0 25px 50px #00000015;
+}
+
 .modal-date-container {
     display: grid;
     grid-template-columns: 137px 440px;
     grid-template-rows: 73px 73px;
     height: 146px;
     width: 577px;
+    row-gap: 23px;
 }
 
 .modal-title {
@@ -1332,13 +1369,15 @@ input::-webkit-inner-spin-button {
 
 .modal-close-button {
     width: 52px;
-    height: 52px;
+    min-height: 52px;
     border-radius: 50%;
     background-color: #f2f2f2;
     background-image: url("../images/cross-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     padding: 0;
+    position: absolute;
+    left: 543px;
 }
 
 .modal-close-button:hover {
@@ -1358,7 +1397,7 @@ input::-webkit-inner-spin-button {
 .title-modal-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    position: relative;
 }
 
 .comment {
@@ -1399,7 +1438,7 @@ input::-webkit-inner-spin-button {
 
 .search-button-modal {
     width: 577px;
-    height: 60px;
+    min-height: 60px;
     background-color: #83b3d3;
     padding: 0;
 }
@@ -1431,19 +1470,19 @@ input::-webkit-inner-spin-button {
     height: 73px;
     width: 577px;
     align-items: center;
+    row-gap: 4px;
 }
 
 .date-input-modal {
     border: none;
-    width: 440px;
+    width: 420px;
     height: 48px;
     background-color: #f2f2f2;
     border-radius: 4px;
     padding: 0;
-    margin-bottom: 4px;
     background-image: url("../images/calendar-icon.svg");
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 22px center;
     cursor: pointer;
     font-family: "PT Sans";
     font-size: 18px;
@@ -1474,7 +1513,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
     margin-bottom: 48px;
-    margin-top: 23px;
+    padding-top: 48px;
     justify-content: space-between;
 }
 
