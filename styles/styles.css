@@ -567,6 +567,7 @@ input::placeholder {
 
 .catalog-filter {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .price-block {
@@ -864,7 +865,7 @@ input::placeholder {
 .filter-container {
     background-image: url("../images/filter-background.jpg");
     background-color: #192d38;
-    background-size: 1200px 412px;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 35px 70px 70px;
 }
@@ -893,7 +894,7 @@ input::placeholder {
     margin: 0;
     padding: 0;
     width: 150.43px;
-    height: 157px;
+    min-height: 157px;
     border: none;
 }
 
