@@ -921,13 +921,14 @@ input::placeholder {
 
 .search-result {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     margin: 0;
     padding: 0;
-    min-width: 538px;
+    width: 538px;
 }
 
 .select-control {
@@ -993,7 +994,7 @@ input::placeholder {
     border: 2px solid #e6e6e6;
     border-radius: 4px;
     width: 48px;
-    min-height: 48px;
+    height: 48px;
     padding: 0;
 }
 
