@@ -932,6 +932,7 @@ input::placeholder {
 
 .select-control {
     width: 292px;
+    height: 49px;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     padding: 12px 18px;
