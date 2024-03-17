@@ -116,6 +116,7 @@ body {
 
 .navigation-logo {
     height: 64px;
+    align-self: flex-start;
 }
 
 .navigation-link {
