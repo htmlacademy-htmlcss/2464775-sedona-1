@@ -133,12 +133,11 @@ a {
 
 .navigation-list {
     padding: 0;
-    padding-right: 283px;
     margin: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 339px;
+    width: 622px;
 }
 
 .navigation-user {
