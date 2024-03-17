@@ -749,6 +749,17 @@ input::placeholder {
     flex-wrap: wrap;
     margin: 0;
     padding: 40px 70px 52px;
+    position: relative;
+}
+
+.pagination::before {
+    position: absolute;
+    content: "";
+    width: 1060px;
+    left: 70px;
+    top: 0;
+    height: 0.5px;
+    background-color: #e6e6e6;
 }
 
 .pagination-item {
@@ -1051,16 +1062,6 @@ input::placeholder {
     padding-left: 70px;
     margin-bottom: 40px;
     position: relative;
-}
-
-.product-list::after {
-    position: absolute;
-    content: "";
-    width: 1060px;
-    left: 70px;
-    top: 935.5px;
-    height: 0.5px;
-    background-color: #e6e6e6;
 }
 
 .product-card {
