@@ -44,7 +44,8 @@ body {
     background-color: #ffffff;
 }
 
-.container-main-page, .container-catalog {
+.container-main-page,
+.container-catalog {
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -56,7 +57,9 @@ body {
     flex-grow: 1;
 }
 
-.container-main-page, .container-catalog, .page-footer {
+.container-main-page,
+.container-catalog,
+.page-footer {
     width: 1200px;
     margin: 0 auto;
 }
@@ -67,7 +70,8 @@ body {
     text-decoration: none;
 }
 
-.button, .product-card-button {
+.button,
+.product-card-button {
     display: inline-block;
     font-family: inherit;
     font-size: 16px;
@@ -328,12 +332,13 @@ body {
     opacity: 30%;
 }
 
-input::placeholder {
+.subscription-form input::placeholder {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
 }
 
-.advantages-title, .infrastructure-title {
+.advantages-title,
+.infrastructure-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -376,7 +381,8 @@ input::placeholder {
     color: #ffffff;
 }
 
-.advantages-description, .infrastructure-description {
+.advantages-description,
+.infrastructure-description {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -481,7 +487,8 @@ input::placeholder {
     background: none;
 }
 
-.subscription-title-catalog, .subscription-description-catalog {
+.subscription-title-catalog,
+.subscription-description-catalog {
     color: #000000;
 }
 
@@ -640,7 +647,8 @@ input::placeholder {
     line-height: 23px;
 }
 
-.apply-button, .featured-products-button {
+.apply-button,
+.featured-products-button {
     background-color: #82b3d3;
 }
 
@@ -668,7 +676,8 @@ input::placeholder {
   opacity: 30%;
 }
 
-.featured-products-button, .featured-chose-button {
+.featured-products-button,
+.featured-chose-button {
     width: 140px;
     justify-self: end;
 }
@@ -806,7 +815,8 @@ input::placeholder {
     left: -24px;
 }
 
-.pagination-link-current, .pagination-link-dots {
+.pagination-link-current,
+.pagination-link-dots {
     color: #000000;
 }
 
@@ -1337,12 +1347,12 @@ input::placeholder {
     outline: 2px solid #000000;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.catalog-filter input::-webkit-outer-spin-button,
+.catalog-filter input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-input[type="number"] {
+.catalog-filter input[type="number"] {
     -moz-appearance: textfield;
 }
 
@@ -1457,7 +1467,9 @@ input[type="number"] {
     padding-right: 82px;
 }
 
-.arrival-date, .departure-date, .title-guests {
+.arrival-date,
+.departure-date,
+.title-guests {
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -1549,7 +1561,8 @@ input[type="number"] {
     justify-content: space-between;
 }
 
-.search-adults, .search-childs {
+.search-adults,
+.search-childs {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
