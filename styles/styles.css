@@ -1391,6 +1391,9 @@ input[type="number"] {
     margin: 0;
     padding: 0;
     margin-bottom: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 543px;
 }
 
 .modal-close-button {
@@ -1540,6 +1543,7 @@ input[type="number"] {
 .search-modal-guests {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 48px;
     padding-top: 48px;
     justify-content: space-between;
@@ -1548,7 +1552,16 @@ input[type="number"] {
 .search-adults, .search-childs {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+}
+
+.search-adults {
+    width: 248px;
+}
+
+.search-childs {
+    width: 242px;
 }
 
 .quantity-guests {
