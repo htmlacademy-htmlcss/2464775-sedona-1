@@ -37,7 +37,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -102,6 +102,7 @@ body {
 
 .button:disabled {
     background-color: #e5e5e5;
+    cursor: not-allowed;
 }
 
 .hero-img {
@@ -333,6 +334,11 @@ body {
 }
 
 .subscription-form input::placeholder {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+}
+
+.subscription-form input {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
 }
@@ -615,16 +621,26 @@ body {
     cursor: pointer;
 }
 
+.control:active {
+    opacity: 30%;
+}
+
 .control-input[type="checkbox"]:focus +.control-mark-square {
     outline: 3px solid #83b3d3;
+}
+
+.control-input[type="checkbox"]:disabled +.control-mark-square {
+    opacity: 10%;
+    cursor: not-allowed;
 }
 
 .control-input[type="radio"]:focus +.control-mark-circle {
     outline: 3px solid #83b3d3;
 }
 
-.control:active {
-    opacity: 30%;
+.control-input[type="radio"]:disabled +.control-mark-circle {
+    opacity: 10%;
+    cursor: not-allowed;
 }
 
 .control-input[type="checkbox"]:checked +.control-mark-square {
@@ -706,6 +722,7 @@ body {
 .reset-button:disabled {
     opacity: 10%;
     background: none;
+    cursor: not-allowed;
 }
 
 .featured-chose-button {
@@ -738,6 +755,7 @@ body {
     text-align: right;
     padding: 0;
     margin: 0;
+    color: #333333;
 }
 
 .rating {
@@ -751,6 +769,7 @@ body {
     min-height: 37px;
     background-color: #f2f2f2;
     justify-self: end;
+    color: #333333;
 }
 
 .pagination {
@@ -987,6 +1006,7 @@ body {
 
 .select-control:disabled {
     opacity: 30%;
+    cursor: not-allowed;
 }
 
 .cards-button-container {
@@ -1089,6 +1109,7 @@ body {
 .hotel {
     margin: 0;
     padding: 0;
+    color: #333333;
 }
 
 .product-card-link {
