@@ -1057,6 +1057,7 @@ input::placeholder {
     margin: 0;
     padding: 0;
     grid-template-columns: 340px 340px 340px;
+    grid-auto-rows: 1fr;
     gap: 20px;
     padding-right: 70px;
     padding-left: 70px;
@@ -1067,7 +1068,7 @@ input::placeholder {
 .product-card {
     display: grid;
     grid-template-columns: 150px 150px;
-    /* grid-auto-rows: max-content 1fr 1fr 1fr; */
+    grid-template-rows: auto repeat(3, min-content);
     color: #000000;
     padding: 19px;
     row-gap: 16px;
