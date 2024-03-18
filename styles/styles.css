@@ -261,7 +261,7 @@ body {
 
 .thesis-description,
 .search-description {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 22px;
@@ -609,11 +609,11 @@ input::placeholder {
 }
 
 .control-input[type="checkbox"]:focus +.control-mark-square {
-    border: 3px solid #83b3d3;
+    outline: 3px solid #83b3d3;
 }
 
 .control-input[type="radio"]:focus +.control-mark-circle {
-    border: 3px solid #83b3d3;
+    outline: 3px solid #83b3d3;
 }
 
 .control:active {
@@ -954,7 +954,7 @@ input::placeholder {
     background-position: right 20px center;
     padding-right: 35px;
     background-color: #ffffff;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -1067,6 +1067,7 @@ input::placeholder {
 .product-card {
     display: grid;
     grid-template-columns: 150px 150px;
+    /* grid-auto-rows: max-content 1fr 1fr 1fr; */
     color: #000000;
     padding: 19px;
     row-gap: 16px;
@@ -1267,7 +1268,7 @@ input::placeholder {
     width: 123px;
     min-height: 48px;
     border: none;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1277,7 +1278,7 @@ input::placeholder {
 
 .prices-range {
     position: relative;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -1340,7 +1341,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-input[type='number'] {
+input[type="number"] {
     -moz-appearance: textfield;
 }
 
@@ -1380,7 +1381,7 @@ input[type='number'] {
 }
 
 .modal-title {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -1427,7 +1428,7 @@ input[type='number'] {
 .comment {
     padding: 0;
     margin: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -1453,7 +1454,7 @@ input[type='number'] {
 }
 
 .arrival-date, .departure-date, .title-guests {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -1466,6 +1467,7 @@ input[type='number'] {
     background-color: #83b3d3;
     padding: 0;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 .search-button-modal:hover {
@@ -1509,7 +1511,7 @@ input[type='number'] {
     background-repeat: no-repeat;
     background-position: right 22px center;
     cursor: pointer;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1522,7 +1524,7 @@ input[type='number'] {
 }
 
 .modal-date-wrapper input::placeholder {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1554,7 +1556,7 @@ input[type='number'] {
     border: none;
     background-color: #f2f2f2;
     padding: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -1617,7 +1619,7 @@ input[type='number'] {
     background-color: #333333;
     box-shadow: 0 4px 4px #00000025;
     border-radius: 10px;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
