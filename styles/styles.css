@@ -35,7 +35,6 @@ html {
 }
 
 body {
-    min-width: 1280px;
     height: 100%;
     margin: 0;
     font-family: "PT Sans", sans-serif;
@@ -45,11 +44,20 @@ body {
     background-color: #ffffff;
 }
 
+.shadow-base {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+
 .container-main-page,
 .container-catalog {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background-color: #ffffff;
 }
 
 .main-container {
@@ -60,7 +68,6 @@ body {
 .container-catalog,
 .page-footer {
     width: 1200px;
-    margin: 0 auto;
 }
 
 .container-catalog a,
