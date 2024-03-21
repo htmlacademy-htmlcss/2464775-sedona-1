@@ -281,13 +281,17 @@ body {
 .search-description {
     margin-top: 20px;
     margin-bottom: 54px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .search {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    margin: 96px 304px;
+    margin-top: 96px;
+    margin-bottom: 96px;
 }
 
 .subscription-button-container {
