@@ -41,15 +41,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    background-color: #ffffff;
-}
-
-.shadow-base {
-    width: 1280px;
-    margin: 0 auto;
     background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
 }
 
 .container-main-page,
@@ -58,6 +50,8 @@ body {
     flex-direction: column;
     min-height: 100%;
     background-color: #ffffff;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -638,6 +632,11 @@ body {
 
 .control:active {
     opacity: 30%;
+}
+
+.control:disabled {
+    opacity: 10%;
+    cursor: not-allowed;
 }
 
 .control-input[type="checkbox"]:focus +.control-mark-square {
