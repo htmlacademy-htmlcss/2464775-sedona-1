@@ -633,11 +633,6 @@ body {
     opacity: 30%;
 }
 
-.control:disabled {
-    opacity: 10%;
-    cursor: not-allowed;
-}
-
 .control-input[type="checkbox"]:focus +.control-mark-square {
     outline: 3px solid #83b3d3;
 }
