@@ -629,16 +629,25 @@ body {
     border-radius: 50%;
 }
 
-.control-input[type="checkbox"]:checked +.control-mark-square {
+.control-input[type="checkbox"]:checked ~ .control-mark-square {
     background-image: url("../images/tick.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.control-input[type="radio"]:checked +.control-mark-circle {
+.control-input[type="radio"]:checked ~ .control-mark-circle {
     background-image: url("../images/circle-mark.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.catalog-filter-item label:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.catalog-filter-item label:active {
+    opacity: 30%;
 }
 
 .catalog-filter-item input[disabled] + label {
