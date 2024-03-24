@@ -606,10 +606,11 @@ body {
     padding-left: 140.15px;
 }
 
-.control {
+.catalog-filter-item {
     position: relative;
     display: block;
     padding-left: 36px;
+    padding-bottom: 19px;
 }
 
 .control-mark {
@@ -624,31 +625,8 @@ body {
     border-radius: 5px;
 }
 
-.control:hover {
-    opacity: 60%;
-    cursor: pointer;
-}
-
-.control:active {
-    opacity: 30%;
-}
-
-.control-input[type="checkbox"]:focus +.control-mark-square {
-    outline: 3px solid #83b3d3;
-}
-
-.control-input[type="checkbox"]:disabled +.control-mark-square {
-    opacity: 10%;
-    cursor: not-allowed;
-}
-
-.control-input[type="radio"]:focus +.control-mark-circle {
-    outline: 3px solid #83b3d3;
-}
-
-.control-input[type="radio"]:disabled +.control-mark-circle {
-    opacity: 10%;
-    cursor: not-allowed;
+.control-mark-circle {
+    border-radius: 50%;
 }
 
 .control-input[type="checkbox"]:checked +.control-mark-square {
@@ -657,14 +635,15 @@ body {
     background-position: center;
 }
 
-.control-mark-circle {
-    border-radius: 50%;
-}
-
 .control-input[type="radio"]:checked +.control-mark-circle {
     background-image: url("../images/circle-mark.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.catalog-filter-item input[disabled] + label {
+    opacity: 10%;
+    cursor: not-allowed;
 }
 
 .control-input {
@@ -931,10 +910,6 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.catalog-filter-item {
-    padding-bottom: 19px;
 }
 
 .catalog-filter-group {
