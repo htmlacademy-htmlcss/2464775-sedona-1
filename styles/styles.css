@@ -607,7 +607,7 @@ body {
 }
 
 .price-container {
-  padding-left: 140.15px;
+  padding-left: 140px;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -1411,9 +1411,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1727,4 +1727,22 @@ body {
 
 .tooltip-modal-childs:focus + .tooltip-text {
   display: block;
+}
+
+.search-adults input::-webkit-outer-spin-button,
+.search-adults input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.search-adults input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.search-childs input::-webkit-outer-spin-button,
+.search-childs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.search-childs input[type="number"] {
+  -moz-appearance: textfield;
 }
