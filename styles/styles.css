@@ -610,7 +610,7 @@ body {
   padding-left: 140.15px;
 }
 
-.catalog-filter-item {
+.catalog-filter-item:not(:last-child) {
   padding-bottom: 19px;
 }
 
