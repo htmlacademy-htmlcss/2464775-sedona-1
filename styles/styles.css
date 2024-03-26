@@ -648,13 +648,10 @@ body {
     background-position: center;
 }
 
-.control:hover {
+.control-input:hover,
+.control-input:hover ~ span {
     opacity: 60%;
     cursor: pointer;
-}
-
-.control:active {
-    opacity: 30%;
 }
 
 .control-input[type="checkbox"]:focus +.control-mark-square {
@@ -665,6 +662,19 @@ body {
     outline: 3px solid #83b3d3;
 }
 
+.control-input:active,
+.control-input:active ~ span {
+    opacity: 30%;
+}
+
+.control-input:disabled {
+    cursor: not-allowed;
+}
+
+.control-input:disabled ~ span {
+    opacity: 10%;
+    cursor: not-allowed;
+}
 
 .apply-button,
 .featured-products-button {
