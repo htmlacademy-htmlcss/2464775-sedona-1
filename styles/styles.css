@@ -260,13 +260,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 64px 0;
+  margin: 0;
   padding: 0;
-  padding-bottom: 90px;
+}
+
+.thesis-description-town {
+  margin-bottom: 90px;
 }
 
 .thesis-description-comfort {
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .thesis-description,
