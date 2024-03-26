@@ -1233,6 +1233,19 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
+.breadcrumbs-item-icon:hover {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.breadcrumbs-item-icon:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-item-icon:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-container li:last-of-type {
   pointer-events: none;
 }
@@ -1241,16 +1254,16 @@ body {
   margin-left: 28px;
 }
 
-.breadcrumbs-link-catalog:hover {
+.breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
 
-.breadcrumbs-link-catalog:focus {
+.breadcrumbs-link:focus {
   color: #ffffff;
 }
 
-.breadcrumbs-link-catalog:active {
+.breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
